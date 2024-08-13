@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B73DDE72C36CF2A00D67C01 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B73DDE62C36CF2A00D67C01 /* ActivityKit.framework */; };
+		1B73DDF12C36D2DD00D67C01 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B73DDF02C36D2DD00D67C01 /* WidgetKit.framework */; };
+		1B73DDF32C36D2DD00D67C01 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B73DDF22C36D2DD00D67C01 /* SwiftUI.framework */; };
+		1B73DDF62C36D2DD00D67C01 /* PomoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B73DDF52C36D2DD00D67C01 /* PomoWidgetBundle.swift */; };
+		1B73DDF82C36D2DD00D67C01 /* PomoWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B73DDF72C36D2DD00D67C01 /* PomoWidgetLiveActivity.swift */; };
+		1B73DDFA2C36D2DD00D67C01 /* PomoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B73DDF92C36D2DD00D67C01 /* PomoWidget.swift */; };
+		1B73DDFC2C36D2DD00D67C01 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B73DDFB2C36D2DD00D67C01 /* AppIntent.swift */; };
+		1B73DDFE2C36D2DE00D67C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B73DDFD2C36D2DE00D67C01 /* Assets.xcassets */; };
+		1B73DE022C36D2DE00D67C01 /* PomoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1B73DDEF2C36D2DD00D67C01 /* PomoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1B73DE082C36DB9D00D67C01 /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B73DE072C36DB9D00D67C01 /* success.wav */; };
 		1BB536092C36BB5800E4E379 /* PomoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB536082C36BB5800E4E379 /* PomoApp.swift */; };
 		1BB5360B2C36BB5800E4E379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5360A2C36BB5800E4E379 /* ContentView.swift */; };
 		1BB5360D2C36BB5800E4E379 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5360C2C36BB5800E4E379 /* Item.swift */; };
@@ -15,9 +25,22 @@
 		1BB5361C2C36BB5900E4E379 /* PomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5361B2C36BB5900E4E379 /* PomoTests.swift */; };
 		1BB536262C36BB5900E4E379 /* PomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB536252C36BB5900E4E379 /* PomoUITests.swift */; };
 		1BB536282C36BB5900E4E379 /* PomoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB536272C36BB5900E4E379 /* PomoUITestsLaunchTests.swift */; };
+		1BB536352C36BC6F00E4E379 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB536342C36BC6F00E4E379 /* TimerModel.swift */; };
+		1BB536372C36BC8A00E4E379 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB536362C36BC8A00E4E379 /* TimerView.swift */; };
+		1BB536392C36BCB200E4E379 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB536382C36BCB200E4E379 /* SettingsView.swift */; };
+		1BB5363B2C36BCC500E4E379 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5363A2C36BCC500E4E379 /* StatisticsView.swift */; };
+		1BB5363D2C36BE1E00E4E379 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5363C2C36BE1E00E4E379 /* SettingsModel.swift */; };
+		1BB5363F2C36BF1700E4E379 /* PomodoroSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5363E2C36BF1700E4E379 /* PomodoroSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1B73DE002C36D2DE00D67C01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BB535FD2C36BB5800E4E379 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B73DDEE2C36D2DD00D67C01;
+			remoteInfo = PomoWidgetExtension;
+		};
 		1BB536182C36BB5900E4E379 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1BB535FD2C36BB5800E4E379 /* Project object */;
@@ -34,7 +57,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1B73DE062C36D2DE00D67C01 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1B73DE022C36D2DE00D67C01 /* PomoWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1B73DDE62C36CF2A00D67C01 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
+		1B73DDE82C36CF3700D67C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1B73DDEF2C36D2DD00D67C01 /* PomoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PomoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B73DDF02C36D2DD00D67C01 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1B73DDF22C36D2DD00D67C01 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1B73DDF52C36D2DD00D67C01 /* PomoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoWidgetBundle.swift; sourceTree = "<group>"; };
+		1B73DDF72C36D2DD00D67C01 /* PomoWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		1B73DDF92C36D2DD00D67C01 /* PomoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoWidget.swift; sourceTree = "<group>"; };
+		1B73DDFB2C36D2DD00D67C01 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		1B73DDFD2C36D2DE00D67C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B73DDFF2C36D2DE00D67C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B73DE072C36DB9D00D67C01 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
 		1BB536052C36BB5800E4E379 /* Pomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB536082C36BB5800E4E379 /* PomoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoApp.swift; sourceTree = "<group>"; };
 		1BB5360A2C36BB5800E4E379 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,13 +95,29 @@
 		1BB536212C36BB5900E4E379 /* PomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB536252C36BB5900E4E379 /* PomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoUITests.swift; sourceTree = "<group>"; };
 		1BB536272C36BB5900E4E379 /* PomoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1BB536342C36BC6F00E4E379 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		1BB536362C36BC8A00E4E379 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		1BB536382C36BCB200E4E379 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1BB5363A2C36BCC500E4E379 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		1BB5363C2C36BE1E00E4E379 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		1BB5363E2C36BF1700E4E379 /* PomodoroSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B73DDEC2C36D2DD00D67C01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B73DDF32C36D2DD00D67C01 /* SwiftUI.framework in Frameworks */,
+				1B73DDF12C36D2DD00D67C01 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BB536022C36BB5800E4E379 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B73DDE72C36CF2A00D67C01 /* ActivityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,13 +138,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B73DDE52C36CF2A00D67C01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B73DDE62C36CF2A00D67C01 /* ActivityKit.framework */,
+				1B73DDF02C36D2DD00D67C01 /* WidgetKit.framework */,
+				1B73DDF22C36D2DD00D67C01 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B73DDF42C36D2DD00D67C01 /* PomoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1B73DDF52C36D2DD00D67C01 /* PomoWidgetBundle.swift */,
+				1B73DDF72C36D2DD00D67C01 /* PomoWidgetLiveActivity.swift */,
+				1B73DDF92C36D2DD00D67C01 /* PomoWidget.swift */,
+				1B73DDFB2C36D2DD00D67C01 /* AppIntent.swift */,
+				1B73DDFD2C36D2DE00D67C01 /* Assets.xcassets */,
+				1B73DDFF2C36D2DE00D67C01 /* Info.plist */,
+			);
+			path = PomoWidget;
+			sourceTree = "<group>";
+		};
 		1BB535FC2C36BB5800E4E379 = {
 			isa = PBXGroup;
 			children = (
 				1BB536072C36BB5800E4E379 /* Pomo */,
 				1BB5361A2C36BB5900E4E379 /* PomoTests */,
 				1BB536242C36BB5900E4E379 /* PomoUITests */,
+				1B73DDF42C36D2DD00D67C01 /* PomoWidget */,
 				1BB536062C36BB5800E4E379 /* Products */,
+				1B73DDE52C36CF2A00D67C01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +179,7 @@
 				1BB536052C36BB5800E4E379 /* Pomo.app */,
 				1BB536172C36BB5900E4E379 /* PomoTests.xctest */,
 				1BB536212C36BB5900E4E379 /* PomoUITests.xctest */,
+				1B73DDEF2C36D2DD00D67C01 /* PomoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,11 +187,19 @@
 		1BB536072C36BB5800E4E379 /* Pomo */ = {
 			isa = PBXGroup;
 			children = (
+				1B73DE072C36DB9D00D67C01 /* success.wav */,
+				1B73DDE82C36CF3700D67C01 /* Info.plist */,
 				1BB536082C36BB5800E4E379 /* PomoApp.swift */,
 				1BB5360A2C36BB5800E4E379 /* ContentView.swift */,
 				1BB5360C2C36BB5800E4E379 /* Item.swift */,
 				1BB5360E2C36BB5900E4E379 /* Assets.xcassets */,
 				1BB536102C36BB5900E4E379 /* Preview Content */,
+				1BB536342C36BC6F00E4E379 /* TimerModel.swift */,
+				1BB536362C36BC8A00E4E379 /* TimerView.swift */,
+				1BB536382C36BCB200E4E379 /* SettingsView.swift */,
+				1BB5363A2C36BCC500E4E379 /* StatisticsView.swift */,
+				1BB5363C2C36BE1E00E4E379 /* SettingsModel.swift */,
+				1BB5363E2C36BF1700E4E379 /* PomodoroSession.swift */,
 			);
 			path = Pomo;
 			sourceTree = "<group>";
@@ -133,6 +232,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1B73DDEE2C36D2DD00D67C01 /* PomoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B73DE032C36D2DE00D67C01 /* Build configuration list for PBXNativeTarget "PomoWidgetExtension" */;
+			buildPhases = (
+				1B73DDEB2C36D2DD00D67C01 /* Sources */,
+				1B73DDEC2C36D2DD00D67C01 /* Frameworks */,
+				1B73DDED2C36D2DD00D67C01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PomoWidgetExtension;
+			productName = PomoWidgetExtension;
+			productReference = 1B73DDEF2C36D2DD00D67C01 /* PomoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1BB536042C36BB5800E4E379 /* Pomo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BB5362B2C36BB5900E4E379 /* Build configuration list for PBXNativeTarget "Pomo" */;
@@ -140,10 +256,12 @@
 				1BB536012C36BB5800E4E379 /* Sources */,
 				1BB536022C36BB5800E4E379 /* Frameworks */,
 				1BB536032C36BB5800E4E379 /* Resources */,
+				1B73DE062C36D2DE00D67C01 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1B73DE012C36D2DE00D67C01 /* PBXTargetDependency */,
 			);
 			name = Pomo;
 			productName = Pomo;
@@ -196,6 +314,9 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					1B73DDEE2C36D2DD00D67C01 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					1BB536042C36BB5800E4E379 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -225,15 +346,25 @@
 				1BB536042C36BB5800E4E379 /* Pomo */,
 				1BB536162C36BB5900E4E379 /* PomoTests */,
 				1BB536202C36BB5900E4E379 /* PomoUITests */,
+				1B73DDEE2C36D2DD00D67C01 /* PomoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1B73DDED2C36D2DD00D67C01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B73DDFE2C36D2DE00D67C01 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BB536032C36BB5800E4E379 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B73DE082C36DB9D00D67C01 /* success.wav in Resources */,
 				1BB536122C36BB5900E4E379 /* Preview Assets.xcassets in Resources */,
 				1BB5360F2C36BB5900E4E379 /* Assets.xcassets in Resources */,
 			);
@@ -256,11 +387,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B73DDEB2C36D2DD00D67C01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B73DDF62C36D2DD00D67C01 /* PomoWidgetBundle.swift in Sources */,
+				1B73DDFC2C36D2DD00D67C01 /* AppIntent.swift in Sources */,
+				1B73DDF82C36D2DD00D67C01 /* PomoWidgetLiveActivity.swift in Sources */,
+				1B73DDFA2C36D2DD00D67C01 /* PomoWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BB536012C36BB5800E4E379 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB5363D2C36BE1E00E4E379 /* SettingsModel.swift in Sources */,
+				1BB5363F2C36BF1700E4E379 /* PomodoroSession.swift in Sources */,
+				1BB536372C36BC8A00E4E379 /* TimerView.swift in Sources */,
+				1BB536352C36BC6F00E4E379 /* TimerModel.swift in Sources */,
 				1BB5360B2C36BB5800E4E379 /* ContentView.swift in Sources */,
+				1BB5363B2C36BCC500E4E379 /* StatisticsView.swift in Sources */,
+				1BB536392C36BCB200E4E379 /* SettingsView.swift in Sources */,
 				1BB5360D2C36BB5800E4E379 /* Item.swift in Sources */,
 				1BB536092C36BB5800E4E379 /* PomoApp.swift in Sources */,
 			);
@@ -286,6 +434,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1B73DE012C36D2DE00D67C01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B73DDEE2C36D2DD00D67C01 /* PomoWidgetExtension */;
+			targetProxy = 1B73DE002C36D2DE00D67C01 /* PBXContainerItemProxy */;
+		};
 		1BB536192C36BB5900E4E379 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1BB536042C36BB5800E4E379 /* Pomo */;
@@ -299,6 +452,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1B73DE042C36D2DE00D67C01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26BP9GY7BL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PomoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PomoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.anomatver.Pomo.PomoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B73DE052C36D2DE00D67C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26BP9GY7BL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PomoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PomoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.anomatver.Pomo.PomoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1BB536292C36BB5900E4E379 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -421,6 +628,7 @@
 		1BB5362C2C36BB5900E4E379 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -429,11 +637,14 @@
 				DEVELOPMENT_TEAM = 26BP9GY7BL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pomo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pomo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,6 +661,7 @@
 		1BB5362D2C36BB5900E4E379 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,11 +670,14 @@
 				DEVELOPMENT_TEAM = 26BP9GY7BL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pomo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pomo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,6 +770,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B73DE032C36D2DE00D67C01 /* Build configuration list for PBXNativeTarget "PomoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B73DE042C36D2DE00D67C01 /* Debug */,
+				1B73DE052C36D2DE00D67C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1BB536002C36BB5800E4E379 /* Build configuration list for PBXProject "Pomo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

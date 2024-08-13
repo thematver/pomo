@@ -5,8 +5,8 @@
 //  Created by Матвей Корепанов on 04.07.2024.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct PomoApp: App {
